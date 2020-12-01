@@ -1,0 +1,213 @@
+.vl-notify.vl-notify-msg {
+  min-height: auto;
+}
+
+// 首页新人专区和专区推荐公共样式（组件）
+.recom-wrap {
+  background-color: #eafafa;
+  color: var(--def-color);
+  padding: 20px;
+  box-sizing: border-box;
+
+  .recom-head {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .recom-list {
+    // padding: 20px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .recom-list ul {
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  .recom-list ul li {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .recom-list ul li .product-img {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .recom-list ul li .product-img img {
+    height: 160px;
+  }
+
+  .recom-list ul li .product-info p {
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .recom-list ul li .product-info .product-info-price {
+    text-align: center;
+    margin-top: 10px;
+
+    .current-price {
+      color: var(--def-backdrop);
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .current-price::before {
+      content: "￥";
+      font-size: 14px;
+    }
+
+    .original-price {
+      font-size: 14px;
+      color: var(--thir-color);
+      text-decoration: line-through;
+    }
+  }
+
+  .recom-list ul li:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+/* 首页顶部样式 */
+.all-header {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.all-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.pagination-wrap {
+  text-align: center;
+  margin-top: 20px;
+  & /deep/ {
+    .btn-prev span,
+    .btn-next span {
+      padding: 0 10px;
+    }
+
+    .el-pager .active {
+      background-color: var(--def-backdrop) !important;
+    }
+
+    .el-pager .active.number:hover {
+      color: white !important;
+    }
+
+    .el-pager .number:hover {
+      color: var(--def-backdrop) !important;
+    }
+  }
+}
+
+//弹窗表单
+.common-dialog-wrap {
+  .common-dialog-main {
+    padding-bottom: 20px;
+    // border-top: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
+  }
+
+  /deep/.el-switch input {
+    width: 0;
+  }
+
+  .dialog-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .btn {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    cursor: pointer;
+  }
+
+  .submit {
+    background-color: var(--def-backdrop);
+    color: white;
+    margin-left: 20px;
+  }
+  .site-parag {
+    display: flex;
+    margin-top: 20px;
+    padding: 0 40px 0 24px;
+    line-height: 34px;
+
+    & > span {
+      width: 96px;
+      height: 34px;
+      line-height: 34px;
+      text-align: left;
+    }
+    .must::before {
+      content: "*";
+      color: #f5222d;
+      padding-right: 4px;
+      position: relative;
+      top: 3px;
+    }
+    & > input {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      height: 30px;
+      flex: 1;
+      font-size: 13px;
+      padding-left: 12px;
+      color: var(--thir-color);
+    }
+
+    & > input:focus {
+      border-color: var(--def-backdrop);
+    }
+  }
+
+  .site-tips {
+    color: #e32e1a;
+    font-size: 12px;
+    margin-left: 122px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .site-tips.info-tips{
+    color: var(--c-color);
+  } 
+  
+  .site-tips.warning-tips{
+    color: #E6A23C;
+  }
+
+  .default-switch {
+    margin-top: 6px;
+  }
+}
+
+.el-loading-spinner .path{
+  stroke:var(--def-backdrop) !important;
+}

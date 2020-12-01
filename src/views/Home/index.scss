@@ -1,0 +1,113 @@
+.sellpoint-wrap {
+  width: 100%;
+  background-color: var(--thir-color);
+}
+
+.sellpoint-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sellpoint-main,
+.sellpoint-main-right {
+  li {
+    display: inline-block;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    color: #efefef;
+
+    .iconfont {
+      margin-top: 1px;
+    }
+
+    span {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      color: var(--f-color);
+    }
+  }
+}
+
+.sellpoint-main li:first-child a {
+  padding-left: 0;
+}
+
+.sellpoint-main-right a {
+  padding: 0;
+}
+
+// 侧边滚动导航栏
+div.home-scroll-bar-wrap {
+  margin-top: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.scroll-bar-left,
+.scroll-bar-right {
+  position: absolute;
+  // background-color: red;
+  top: 0;
+}
+
+.scroll-bar-left {
+  width: 100px;
+  left: -110px;
+  padding: 30px 0 10px 0;
+  background-color: var(--f-color);
+}
+
+.scroll-bar-left > h3 {
+  font-size: 16px;
+  color: var(--def-backdrop);
+  text-align: center;
+}
+
+.scroll-bar-left > p {
+  font-size: 12px;
+  color: var(--thir-color);
+  text-align: center;
+  padding: 2px 0 8px 0;
+  letter-spacing: 1px;
+}
+
+.scroll-bar-left .scroll-bar-hot {
+  padding: 13px 0;
+  text-align: center;
+  color: var(--def-color);
+  border-bottom: 1px solid var(--e-color);
+  border-top: 1px solid var(--e-color);
+}
+
+.scroll-bar-right {
+  width: 60px;
+  right: -70px;
+}
+
+.scroll-bar-list {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--e-color);
+}
+
+.scroll-bar-list ul li a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--sec-color);
+}
+
+.app-scan-wrap {
+  width: 100%;
+  padding: 10px 4px 0 4px;
+  box-sizing: border-box;
+  height: 102px;
+}
+
+section.home-recom {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}

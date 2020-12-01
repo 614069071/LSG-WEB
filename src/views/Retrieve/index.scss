@@ -1,0 +1,246 @@
+.retrieve-wrap {
+  background-color: var(--f-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.retrieve-head {
+  box-shadow: 0px 2px 13px 2px rgba(0, 0, 0, 0.1);
+}
+
+.retrieve-head-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+.retrieve-main {
+  flex: 1;
+  text-align: center;
+}
+
+// 身份认证
+.retrieve-step1 {
+  .validation-tips-icon {
+    color: var(--def-backdrop);
+    margin-top: 50px;
+
+    i {
+      font-size: 60px;
+      margin-left: 8px;
+    }
+  }
+
+  .validation-tips-text {
+    color: var(--thir-color);
+  }
+
+  .validation-type {
+    margin-top: 50px;
+
+    & > div {
+      width: 360px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.validation-dialog-item {
+  .validation-dialog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+    width: 400px;
+  }
+
+  .dialog-validation-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--cb-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .iconfont {
+      font-size: 26px;
+      color: var(--f-color);
+    }
+  }
+
+  .dialog-validation-type {
+    margin: 20px 0 40px;
+  }
+
+  .dialog-validation-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--thir-color);
+    margin: 0 0 30px 0;
+    position: relative;
+
+    input {
+      flex: 1;
+      height: 40px;
+      border-radius: 20px;
+      padding: 0 12px;
+      border: 1px solid rgba(203, 203, 203, 1);
+      color: var(--thir-color);
+      box-sizing: border-box;
+    }
+
+    & > span {
+      width: 140px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 20px;
+      box-sizing: border-box;
+      border: 1px solid rgba(203, 203, 203, 1);
+      text-align: center;
+      cursor: pointer;
+      margin-left: 10px;
+
+      &.active {
+        color: var(--def-backdrop);
+      }
+    }
+
+    & > p {
+      position: absolute;
+      left: -10px;
+      bottom: -20px;
+      transform: scale(0.8);
+      color: #e6a23c;
+
+      i {
+        // color: red;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .dialog-validation-submit {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+// 设置密码
+.retrieve-step2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  & > p {
+    width: 340px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .retrieve-reset {
+    width: 340px;
+    position: relative;
+    margin: 20px 0 30px;
+
+    input {
+      width: 100%;
+      height: 50px;
+      border-radius: 25px;
+      border: 1px solid var(--e-color);
+      padding-left: 20px;
+      padding-right: 38px;
+      box-sizing: border-box;
+    }
+
+    span {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 10px;
+      top: 10px;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      text-align: left;
+      position: absolute;
+      left: 2px;
+      bottom: -20px;
+      color: #e6a23c;
+    }
+  }
+
+  .reset-btn {
+    width: 340px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: var(--f-color);
+    background-color: var(--def-backdrop);
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+}
+
+// 修改成功
+.retrieve-step3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .retrieve-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 5px;
+
+    span {
+      display: block;
+    }
+
+    span:first-child {
+      width: 52px;
+      height: 52px;
+      background-color: var(--def-backdrop);
+      border-radius: 50%;
+      color: var(--f-color);
+      text-align: center;
+      line-height: 52px;
+      font-size: 38px;
+    }
+
+    span:last-child {
+      color: var(--sec-color);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+
+  .re-btn {
+    width: 360px;
+    margin: 50px 0;
+  }
+}
