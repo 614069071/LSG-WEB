@@ -19,7 +19,7 @@
 <script>
 import LoginWrap from '@/views/Login/LoginWrap';
 export default {
-	components: { LoginWrap },
+	components: { LoginWrap }
 };
 </script>
 
